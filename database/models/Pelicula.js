@@ -36,7 +36,7 @@ module.exports = function(sequelize, dataTypes) { /* dataTypes me indicará los 
     let Pelicula = sequelize.define(alias, cols, config);
 
     Pelicula.associate = function(models) {
-        Pelicula.belongsToMany(models.Genero, { /* belongsToMany pertenece a un solo género */
+        Pelicula.hasMany(models.Genero, { /* belongsToMany pertenece a un solo género (ARREGLE ERROR ERA AL FINAL CON HASMANY)*/
             as: "genero",             
             foreignKey: "actor_id"
         });
