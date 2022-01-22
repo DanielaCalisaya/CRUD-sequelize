@@ -39,3 +39,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+/* para levantar el servidor, en terminal escribir -> nodemon bin/www y enter */
